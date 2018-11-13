@@ -1,8 +1,16 @@
 package com.example;
 
+
 /**
- * This is a class.
+ * Domain classes used to produce the JSON and XML output for the RESTful services. 
+ * <p>
+ * These classes contain the JAXB annotations.
+ *
+ * @since 1.0
+ * @author jwhite
+ * @version 1.1
  */
+
 public class Greeter {
 
   /**
@@ -11,9 +19,7 @@ public class Greeter {
   public Greeter() {
 
   }
-
-  //TODO: Add javadoc comment
-  public String greet(String someone) {
+  public String greet( final String someone) {
     return String.format("Hello, %s!", someone);
   }
 }
